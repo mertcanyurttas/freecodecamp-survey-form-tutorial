@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Mertcan Yurttaş"/>
+        <meta name="keywords" content="Election, 2023, Turkey, President"/>
+        <meta name="description" content="Survey on 2023 Turkish Presidential Election."/>
+
+        <title>2023 Türkiye Seçim Anketi</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="icon" type="image/png" href="./survey-form-favicon.png"/>
+    </head>
+    <body>
+        <h1 id="title">2023 Türkiye Genel Seçimleri Anketi</h1>
+        <p id="description">
+            2023 Türkiye Cumhurbaşkanlığı ve milletvekilleri seçim anketi
+        </p>
+        <form id="survey-form" method="get">
+            <fieldset class="section">
+                <label id="fname-label">İsim:
+                    <input type="text" id="name" name="fname" placeholder="İsim" required/>
+                </label>
+                <label id="lname-label">Soyisim:
+                    <input type="text" id="name" name="lname" placeholder="Soyisim" required/>
+                </label>
+                <label id="email-label">E-Posta:
+                    <input type="email" id="e-mail" name="e-mail" placeholder="E-Posta" required/>
+                </label>
+                <label id="language-label">Yabancı Dil Sayısı:
+                    <input type="number" id="language-number" name="language" placeholder="Yabancı Dil" min="0" max="9" required/>
+                </label>
+                <fieldset class="radio">Cinsiyetiniz:
+                    <input type="radio" name="gender" value="kadın" required/> Kadın
+                    <input type="radio" name="gender" value="erkek" required/> Erkek
+                </fieldset>
+                <hr/>
+                <div class="president-voting">
+                    <div class="president-text">Cumhurbaşkanı Adayınız: </div>
+                    <div class="dropdown-list-div">
+                        <select id="dropdown-list" required>
+                            <option name="erdogan">Recep Tayyip Erdoğan</option>
+                            <option name="kilicdaroglu">Kemal Kılıçdaroğlu</option>
+                            <option name="ince">Muharrem İnce</option>
+                            <option name="ogan">Sinan Oğan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="party-voting">
+                    <div class="party-text">Desteklediğiniz Parti:</div>
+                    <div class="dropdown-list-div">
+                        <select id="dropdown-list" required>
+                            <option name="akp">Adalet ve Kalkınma Partisi</option>
+                            <option name="btp">Bağımsız Türkiye Partisi</option>
+                            <option name="bbp">Büyük Birlik Partisi</option>
+                            <option name="chp">Cumhuriyet Halk Partisi</option>
+                            <option name="deva">Demokrasi ve Atılım Partisi</option>
+                            <option name="dsp">Demokratik Sol Parti</option>
+                            <option name="dp">Demokrat Parti</option>
+                            <option name="gp">Gelecek Partisi</option>
+                            <option name="hdp">Halkların Demokratik Partisi</option>
+                            <option name="hudapar">Hür Dava Partisi</option>
+                            <option name="iyip">İyi Parti</option>
+                            <option name="mp">Memleket Partisi</option>
+                            <option name="mhp">Milliyetçi Hareket Partisi</option>
+                            <option name="sp">Saadet Partisi</option>
+                            <option name="tdp">Türkiye Değişim Partisi</option>
+                            <option name="tip">Türkiye İşçi Partisi</option>
+                            <option name="tkp">Türkiye Komünist Partisi</option>
+                            <option name="vp">Vatan Partisi</option>
+                            <option name="yrp">Yeniden Refah Partisi</option>
+                            <option name="zp">Zafer Partisi</option>
+                        </select>
+                    </div>
+                </div>
+                <hr/>
+                <p class="footer-paragraph">Size göre ülkenin en önemli sorunu:</p>
+                <div class="checkbox-div">
+                    <div class="column-left-div">
+                        <label for="justice">
+                            <input type="checkbox" id="justice" name="justice" value="Adalet"/> Adalet 
+                        </label>
+                        <label for="education"> 
+                            <input type="checkbox" id="education" name="education" value="Eğitim"/> Eğitim
+                        </label>
+                        <label for="economy">
+                            <input type="checkbox" id="economy" name="economy" value="Ekonomi"/> Ekonomi
+                        </label>
+                        <label for="climate-change">
+                            <input type="checkbox" id="climate-change" name="climate-change" value="İklim Değişikliği"/> İklim Değişikliği
+                        </label>
+                    </div>
+                    <div class="column-right-div">
+                        <label for="refugees">
+                            <input type="checkbox" id="refugees" name="refugees" value="Mülteciler"/> Mülteciler
+                        </label>
+                        <label for="agriculture-and-livestock">
+                            <input type="checkbox" id="agriculture-and-livestock" name="agriculture-and-livestock" value="Tarım ve Hayvancılık"/> Tarım ve Hayvancılık
+                        </label>
+                        <label for="terror">
+                            <input type="checkbox" id="terror" name="terror" value="Terör"/> Terör
+                        </label>
+                    </div>
+                </div>
+                <hr/>
+                <p class="advice-text">Görüş ve öneriler:</p>
+                <textarea rows="3" cols="30" placeholder="Açıklama..."></textarea>
+                <input type="submit" id="submit"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

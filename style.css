@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(./background-image.jpg);
+    background-size: cover;
+}
+
+h1#title {
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #E21818;
+}
+
+p#description {
+    margin: 30px 10px 0px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+}
+
+.section {
+    width: 400px;
+    height: auto;
+    margin: 50px auto;
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #4D4D4D;
+}
+
+/* Personal Information Start */
+
+#survey-form .section label {
+    display: block;
+    margin: 10px;
+    line-height: 20px;
+}
+
+#survey-form .section label input {
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    float: right;
+    background-color: #d3d3d3;
+}
+
+#survey-form .section .radio {
+    display: block;
+    margin: 10px;
+    padding: 0px;
+    border: none;
+}
+
+#survey-form .section .radio input {
+    margin-left: 6px;
+}
+
+#survey-form .section .radio input:not(:last-of-type) {
+    margin-left: 76px;
+}
+
+/* Personal Information Finish */
+
+/* Political Preference Information Start */
+
+#survey-form .section .president-voting,
+#survey-form .section .party-voting {
+    display: flex;
+    margin: 10px 0px;
+}
+
+#survey-form .section .president-voting .president-text,
+#survey-form .section .party-voting .party-text {
+    margin-left: 10px;
+}
+
+#survey-form .section .president-voting .dropdown-list-div select {
+    width: 180px;
+    height: 20px;
+    margin-left: 4px;
+    margin-right: 0px;
+    border: none;
+    outline: none;
+    background-color: #d3d3d3;
+}
+
+#survey-form .section .party-voting .dropdown-list-div select {
+    width: 180px;
+    height: 20px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    background-color: #d3d3d3;
+}
+
+#survey-form .section hr {
+    width: 96%;
+    margin: auto;
+}
+
+#survey-form .section .footer-paragraph {
+    margin: 5px 10px;
+}
+
+#survey-form .section .checkbox-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px 5px;
+}
+
+#survey-form .section .checkbox-div .column-left-div,
+#survey-form .section .checkbox-div .column-right-div {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+#survey-form .section .checkbox-div .column-left-div label,
+#survey-form .section .checkbox-div .column-right-div label {
+    display: flex;
+    margin: 5px 0px;
+}
+
+#survey-form .section .checkbox-div .column-left-div label input,
+#survey-form .section .checkbox-div .column-right-div label input {
+    width: 18px;
+    height: 18px;
+    margin: auto 5px;
+}
+
+/* Political Preference Information Finish */
+
+/* Opinions and Suggestions Section Start */
+
+#survey-form .section .advice-text {
+    margin: 10px;
+}
+
+#survey-form .section textarea {
+    display: block;
+    margin: 12px auto 0px 10px;
+    padding: 3px;
+    border-radius: 3px;
+    outline: none;
+    resize: none;
+    background-color: #d3d3d3;
+}
+
+#survey-form .section input[type="submit"] {
+    width: 88px;
+    height: 24px;
+    margin: 14px auto 8px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    background-color: #d3d3d3;
+}
+
+/* Opinions and Suggestions Section Finish */
+
+/* For Large Screen Tablets Start */
+
+@media only screen and (max-width: 1100px) {
+    body {
+        background-attachment: fixed;
+    }
+
+    h1#title {
+        font-size: 28px;
+    }
+
+    p#description {
+        font-size: 26px;
+    }
+
+    .section {
+        margin: 60px auto;
+    }
+}
+
+/* For Large Screen Tablets Finish */
+
+/* For Small Screen Tablets Start */
+
+@media only screen and (max-width: 800px) {
+    h1#title {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    
+    p#description {
+        font-size: 22px;
+    }
+}
+
+/* For Small Screen Tablets Finish */
+
+/* For Large Screen Mobile Divices Start */
+
+@media only screen and (max-width: 450px) {    
+    h1#title {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    p#description {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
+    .section {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #survey-form .section .radio input:not(:last-of-type) {
+        margin-left: 60px;
+    }
+
+    #survey-form .section .president-voting,
+    #survey-form .section .party-voting {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        margin: 5px 0px;
+    }
+
+    #survey-form .section .president-voting .dropdown-list-div select,
+    #survey-form .section .party-voting .dropdown-list-div select {
+        width: 180px;
+        height: 20px;
+        margin: 5px auto 5px 10px;
+    }
+}
+
+/* For Large Screen Mobile Divices Finish */
+
+/* For Small Screen Mobile Divices Start */
+
+@media only screen and (max-width: 400px) {
+    #survey-form .section #language-label input {
+        width: 150px;
+    }
+
+    #survey-form .section .radio input:not(:last-of-type) {
+        margin-left: 76px;
+    }
+}
+
+/* For Small Screen Mobile Divices Finish */
+
+/* For Ultra Small Screen Mobile Divices Start */
+
+@media only screen and (max-width: 360px) {
+    h1#title {
+        font-size: 16px;
+    }
+    
+    p#description {
+        font-size: 14px;
+    }
+
+    #survey-form .section label input {
+        width: 150px;
+    }
+
+    #survey-form .section #language-label input {
+        width: 90px;
+    }
+
+    #survey-form .section .radio input:not(:last-of-type) {
+        margin-left: 12px;
+    }
+
+    #survey-form .section .checkbox-div .column-left-div label input,
+    #survey-form .section .checkbox-div .column-right-div label input {
+        min-width: 18px;
+        min-height: 18px;
+        margin: auto 5px;
+    }
+}
+
+/* For Ultra Small Screen Mobile Divices Finish */
